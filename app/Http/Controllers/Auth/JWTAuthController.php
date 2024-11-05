@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Auth;
 
 use App\Models\User\BcMngr;
 use App\Models\User\BcMngrCrtfc;
-use App\Models\User\FabCrtfc;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
