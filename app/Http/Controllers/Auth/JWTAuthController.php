@@ -71,28 +71,16 @@ class JWTAuthController extends Controller
      *                      type="object",
      *                      description="사용자 정보",
      *                      @OA\Property(
-     *                          property="mber_id", type="integer", example="1",
+     *                          property="mngr_id", type="integer", example="1",
      *                      ),
      *                      @OA\Property(
-     *                          property="mber_se", type="string", example="1",
+     *                          property="mngr_se", type="string", example="1",
      *                      ),
      *                      @OA\Property(
-     *                          property="mber_sttus", type="string", example="1",
+     *                          property="mngr_sttus", type="string", example="1",
      *                      ),
      *                      @OA\Property(
      *                          property="login_id", type="string", example="test",
-     *                      ),
-     *                      @OA\Property(
-     *                          property="_fab_empl", type="object", description="사원정보",
-     *                      ),
-     *                      @OA\Property(
-     *                          property="_fab_cmpny", type="object", description="회사정보",
-     *                      ),
-     *                      @OA\Property(
-     *                          property="_fab_dept", type="object", description="부서정보",
-     *                      ),
-     *                      @OA\Property(
-     *                          property="_fab_rspofc", type="object", description="직위정보",
      *                      ),
      *                  ),
      *              ),
