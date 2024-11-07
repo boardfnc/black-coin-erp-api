@@ -327,10 +327,11 @@ class AdminManagerController extends Controller
             ], 400);
         }
 
+        $regex = "/^[0-9\-]+$/";
         if (!preg_match($regex, $request['acnutno'])) {
             return response()->json([
                 'status'    => false,
-                'message'   => '계좌번호는 숫자만 입력 가능 합니다.',
+                'message'   => '계좌번호는 숫자와 -만 입력 가능 합니다.',
             ], 400);
         }
 
@@ -950,12 +951,12 @@ class AdminManagerController extends Controller
             ], 400);
         }
 
-        $regex = "/^[0-9]+$/";
+        $regex = "/^[0-9\-]+$/";
 
         if (!preg_match($regex, $request['acnutno'])) {
             return response()->json([
                 'status'    => false,
-                'message'   => '계좌번호는 숫자만 입력 가능 합니다.',
+                'message'   => '계좌번호는 숫자와 -만 입력 가능 합니다.',
             ], 400);
         }
 
