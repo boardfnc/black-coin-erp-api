@@ -253,10 +253,11 @@ class AdminAccountController extends Controller
 
         if(!empty($request['ca_rcpmny_acnutno']))
         {
+            $regex = "/^[0-9\-]+$/";
             if (!preg_match($regex, $request['ca_rcpmny_acnutno'])) {
                 return response()->json([
                     'status'    => false,
-                    'message'   => '계좌번호는 숫자만 입력 가능 합니다.',
+                    'message'   => '계좌번호는 숫자와 -만 입력 가능 합니다.',
                 ], 400);
             }
         }
@@ -276,10 +277,11 @@ class AdminAccountController extends Controller
 
         if(!empty($request['vvip_rcpmny_acnutno']))
         {
+            $regex = "/^[0-9\-]+$/";
             if (!preg_match($regex, $request['vvip_rcpmny_acnutno'])) {
                 return response()->json([
                     'status'    => false,
-                    'message'   => '계좌번호는 숫자만 입력 가능 합니다.',
+                    'message'   => '계좌번호는 숫자와 -만 입력 가능 합니다.',
                 ], 400);
             }
         }
@@ -299,10 +301,11 @@ class AdminAccountController extends Controller
 
         if(!empty($request['vip_rcpmny_acnutno']))
         {
+            $regex = "/^[0-9\-]+$/";
             if (!preg_match($regex, $request['vip_rcpmny_acnutno'])) {
                 return response()->json([
                     'status'    => false,
-                    'message'   => '계좌번호는 숫자만 입력 가능 합니다.',
+                    'message'   => '계좌번호는 숫자와 -만 입력 가능 합니다.',
                 ], 400);
             }
         }
@@ -322,10 +325,11 @@ class AdminAccountController extends Controller
 
         if(!empty($request['gnrl_rcpmny_acnutno']))
         {
+            $regex = "/^[0-9\-]+$/";
             if (!preg_match($regex, $request['gnrl_rcpmny_acnutno'])) {
                 return response()->json([
                     'status'    => false,
-                    'message'   => '계좌번호는 숫자만 입력 가능 합니다.',
+                    'message'   => '계좌번호는 숫자와 -만 입력 가능 합니다.',
                 ], 400);
             }
         }
@@ -345,10 +349,11 @@ class AdminAccountController extends Controller
 
         if(!empty($request['new_rcpmny_acnutno']))
         {
+            $regex = "/^[0-9\-]+$/";
             if (!preg_match($regex, $request['new_rcpmny_acnutno'])) {
                 return response()->json([
                     'status'    => false,
-                    'message'   => '계좌번호는 숫자만 입력 가능 합니다.',
+                    'message'   => '계좌번호는 숫자와 -만 입력 가능 합니다.',
                 ], 400);
             }
         }
