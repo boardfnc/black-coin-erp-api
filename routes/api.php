@@ -48,8 +48,8 @@ Route::group(['middleware' => ['jwt.verify']], function() {
     Route::post( 'member/admin-member/payment', [App\Http\Controllers\Member\AdminMemberController::class, 'payment'])->name('MemberAdminMemberPaymentPost');
 
     Route::get( 'member/admin-member-subscribes', [App\Http\Controllers\Member\AdminMemberSubscribeController::class, 'index'])->name('MemberAdminMemberSubscribesGet');
-    Route::post( 'member/member/admin-member-subscribe/consent', [App\Http\Controllers\Member\AdminMemberSubscribeController::class, 'consent'])->name('MemberAdminMemberSubscribeConsentPost');
-    Route::post( 'member/member/admin-member-subscribe/rejection', [App\Http\Controllers\Member\AdminMemberSubscribeController::class, 'rejection'])->name('MemberAdminMemberSubscribeRejectionPost');
+    Route::post( 'member/admin-member-subscribe/consent', [App\Http\Controllers\Member\AdminMemberSubscribeController::class, 'consent'])->name('MemberAdminMemberSubscribeConsentPost');
+    Route::post( 'member/admin-member-subscribe/rejection', [App\Http\Controllers\Member\AdminMemberSubscribeController::class, 'rejection'])->name('MemberAdminMemberSubscribeRejectionPost');
 
     Route::get( 'member/admin-member-grades', [App\Http\Controllers\Member\AdminMemberGradeController::class, 'index'])->name('MemberAdminMemberGradesGet');
     Route::put( 'member/admin-member-grade/{id}', [App\Http\Controllers\Member\AdminMemberGradeController::class, 'update'])->name('MemberAdminMemberGradePut')->where('id', '[0-9]+');
